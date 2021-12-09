@@ -1,9 +1,16 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Container from './components/Container.vue'
+import GithubUser from './components/GithubUser.vue'
+import Header from './components/Header.vue'
+import SearchBox from './components/SearchBox.vue'
 </script>
 
 <template>
-  <HelloWorld msg="Github User Search App." />
+  <Container>
+    <Header />
+    <main>
+      <SearchBox />
+      <GithubUser />
+    </main>
+  </Container>
 </template>

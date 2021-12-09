@@ -13,7 +13,11 @@ module.exports = {
       red: '#F74646',
       white: '#FEFEFE',
     },
-    extend: {},
+    extend: {
+      screens: {
+        md2: '960px',
+      },
+    },
     fontFamily: {
       mono: ["'Space Mono'", 'monospace'],
     },
@@ -21,6 +25,14 @@ module.exports = {
       '2.5xl': ['1.625rem', '2.375rem'],
       '1.5xl': ['1.375', '2rem'],
       tiny: ['0.8125rem', '1.25rem'], // h4
+    },
+    maxWidth: {
+      730: '730px',
+      575: '575px',
+      325: '325px',
+    },
+    textColor: {
+      title: '#222731',
     },
   },
   variants: {
