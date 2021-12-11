@@ -32,7 +32,7 @@ export default {
       </div>
 
       <div class="mt-5">
-        <Bio bio="githubProfile.bio" />
+        <Bio :bio="githubProfile.bio" />
 
         <div class="bg-lightGray rounded-xl px-8 py-5 flex justify-between text-center">
           <div>
