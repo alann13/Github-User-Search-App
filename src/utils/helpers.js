@@ -19,13 +19,15 @@ export const formatGithubProfile = ({
     bio,
     company,
     created_at,
-    following,
-    followers,
     html_url,
     location,
     login,
     name,
-    public_repos,
+    stats: [
+      { label: 'Repos', count: public_repos },
+      { label: 'Followers', count: followers },
+      { label: 'Following', count: following },
+    ],
     twitter_username,
   }
 
@@ -33,5 +35,5 @@ export const formatGithubProfile = ({
 }
 
 export const formatDate = (date) => {
-  return format(new Date(date), 'PPP')
+  return format(new Date(date), 'MMM do yyyy')
 }

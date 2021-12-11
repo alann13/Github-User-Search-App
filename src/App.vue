@@ -1,13 +1,19 @@
-<script setup>
+<script>
 import Container from '@components/Container.vue'
 import GithubUserCard from '@components/GithubUserCard.vue'
 import Header from '@components/Header.vue'
 import SearchBox from '@components/SearchBox.vue'
+
+export default {
+  name: 'App',
+  components: { Container, GithubUserCard, Header, SearchBox },
+}
 </script>
 
 <template>
   <Container>
     <Header />
+
     <main class="w-full">
       <SearchBox />
       <GithubUserCard />
@@ -17,6 +23,6 @@ import SearchBox from '@components/SearchBox.vue'
 
 <style scoped>
 main > * {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 </style>

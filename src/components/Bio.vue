@@ -5,6 +5,6 @@ defineProps({
 </script>
 
 <template>
-  <div v-if="bio" class="text-base mb-3 text-altBlue">{{ bio }}</div>
-  <div v-else class="text-base mb-3 text-altBlue">Bio is not available.</div>
+  <div v-if="bio" class="text-base mb-3 text-altBlue dark:text-white">{{ bio }}</div>
+  <div v-else class="text-base mb-3 text-altBlue dark:text-white">Bio is not available.</div>
 </template>
