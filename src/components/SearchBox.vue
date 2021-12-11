@@ -34,7 +34,7 @@ export default {
     <fieldset class="relative">
       <label for="search"></label>
       <input
-        class="shadow w-full py-5 pl-8 outline-none rounded-3xl xl:text-lg"
+        class="text-tiny shadow w-full py-5 pl-8 outline-none rounded-3xl xl:text-lg"
         type="text"
         :value="githubUser"
         @input="handleInputChange"
@@ -42,6 +42,8 @@ export default {
       />
       <input
         class="
+          my-2
+          text-sm
           cursor-pointer
           bg-blue
           hover:bg-lightBlue
@@ -49,8 +51,7 @@ export default {
           text-white
           absolute
           right-2
-          top-2
-          px-5
+          px-4
           py-3
           rounded-2xl
         "

@@ -1,8 +1,8 @@
 <script setup>
-import Container from './components/Container.vue'
-import GithubUserCard from './components/GithubUserCard.vue'
-import Header from './components/Header.vue'
-import SearchBox from './components/SearchBox.vue'
+import Container from '@components/Container.vue'
+import GithubUserCard from '@components/GithubUserCard.vue'
+import Header from '@components/Header.vue'
+import SearchBox from '@components/SearchBox.vue'
 </script>
 
 <template>

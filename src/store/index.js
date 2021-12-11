@@ -1,5 +1,5 @@
+import { formatGithubProfile } from '@utils/helpers'
 import { createStore } from 'vuex'
-import { formatGithubProfile } from '../utils/helpers'
 
 export const store = createStore({
   state() {

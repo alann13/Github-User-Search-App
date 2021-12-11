@@ -1,8 +1,10 @@
+import { format } from 'date-fns'
+
 export const formatGithubProfile = ({
   avatar_url,
   bio,
   company,
-  createdAt,
+  created_at,
   followers,
   following,
   html_url,
@@ -16,7 +18,7 @@ export const formatGithubProfile = ({
     avatar_url,
     bio,
     company,
-    createdAt,
+    created_at,
     following,
     followers,
     html_url,
@@ -28,4 +30,8 @@ export const formatGithubProfile = ({
   }
 
   return formattedProfile
+}
+
+export const formatDate = (date) => {
+  return format(new Date(date), 'PPP')
 }

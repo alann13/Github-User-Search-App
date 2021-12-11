@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{vue,js}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     boxShadow: {
@@ -21,7 +21,8 @@ module.exports = {
       fontSize: {
         '2.5xl': ['1.625rem', '2.375rem'],
         '1.5xl': ['1.375', '2rem'],
-        tiny: ['0.8125rem', '1.25rem'], // h4
+        tiny: ['0.8125rem', '1.25rem'], // h4,
+        xxs: ['0.6875', 1], // 11px
       },
       screens: {
         md2: '960px',
